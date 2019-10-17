@@ -26,7 +26,7 @@ def scrape():
     if request.method == 'POST':
         url = request.form['message']
         response = requests.get(url)
-        soup = BeautifulSoup(response.text, 'lxml')
+        soup = BeautifulSoup(response.text, 'html5lib')
         #scraping headlines
         headlines = soup.find_all(attrs={"itemprop": "headline"})
         dataset=[]
