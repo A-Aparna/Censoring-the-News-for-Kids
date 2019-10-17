@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+        <h2>Censoring the News Headlines for kids</h2>
+    </header>
+    <ul>
+        {% for key, value in prediction.items() %}
+        <li><a href="{{value}}">{{ key }}</a></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
