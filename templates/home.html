@@ -4,6 +4,7 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
     <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">-->
+    
 </head>
 <body class="home">
 
@@ -17,7 +18,8 @@
 
         <form action="{{ url_for('scrape')}}" method="POST">
         <p>Enter the url to scrape</p>
-        <textarea name="message" rows="2" cols="50"></textarea>
+            <h4>(Please note that currently it works for only this url:<span style="color:red">https://inshorts.com/en/read</span>)</h4>
+        <textarea name="message" placeholder="https://inshorts.com/en/read" rows="2" cols="50"></textarea>
         <br/>
 
         <input type="submit" class="btn-info" value="Scrape and Censor">
@@ -29,7 +31,7 @@
 
         <form action="{{ url_for('predict')}}" method="POST">
         <p>Enter the headline here</p>
-        <textarea name="message" rows="10" cols="50"></textarea>
+        <textarea name="message" placeholder="e.g. 10 people was killed in riots in Lucknow"rows="10" cols="50"></textarea>
         <br/>
 
         <input type="submit" class="btn-info" value="Censor">
