@@ -2,35 +2,37 @@
 <html>
 <head>
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">-->
 </head>
-<body bgcolor='#C0AC90' >
+<body class="home">
 
-    <header bgcolor="#222222" >
-        <div style="background-color:cyan; color:white;">
-        <h2 align='center'>
-                <span style="color:black">Censoring the News Headlines for kids</span></h2>
+    <header  >
+            <div id="header" class="section">
+                <h1 align="center"><span> Censoring the News for kids</span></h1>
         </div>
+
     </header>
-        <div style="background-color:pink; color:white;" class="ml-container">
+        <div class="ml-container">
 
         <form action="{{ url_for('scrape')}}" method="POST">
         <p>Enter the url to scrape</p>
         <textarea name="message" rows="2" cols="50"></textarea>
         <br/>
 
-        <input type="submit" class="btn-info" value="predict">
+        <input type="submit" class="btn-info" value="Scrape and Censor">
 
         </form>
     </div>
 
-    <div style="background-color:grey; color:white;" class="ml-container">
+    <div class="ml-container">
 
         <form action="{{ url_for('predict')}}" method="POST">
         <p>Enter the headline here</p>
         <textarea name="message" rows="10" cols="50"></textarea>
         <br/>
 
-        <input type="submit" class="btn-info" value="predict">
+        <input type="submit" class="btn-info" value="Censor">
 
         </form>
     </div>

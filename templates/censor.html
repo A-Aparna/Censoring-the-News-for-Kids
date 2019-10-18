@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
 </head>
-<body>
+<body class="censor">
 
-    <header>
-        <h2>Censoring the News Headlines for kids</h2>
-    </header>
+     <div id="header" class="section">
+                <h1 align="center"><span> Censoring the News for kids</span></h1>
+        </div>
     <ul>
         {% for pred in prediction %}
         <li><a>{{ pred }}</a></li>
