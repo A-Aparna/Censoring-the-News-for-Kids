@@ -1,0 +1,53 @@
+body.home {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+    background-image: url("../kids1.jpg");
+}
+body.censor {
+    font-family: 'Handlee', cursive;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0;
+    background-image: url("../pink.jpg");
+}
+h1 span {
+    border: 4px dashed #20bcd5;
+    padding: 1px;
+        font-size: 25pt;
+    color: #3b464c;
+    font-weight: bold;
+    text-align: center;
+}
+#header {
+    
+    background-size: cover;
+}
+#header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+textarea {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
