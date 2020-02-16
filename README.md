@@ -24,7 +24,11 @@ Output: List of the headlines displaying only the ones appropriate for kids to r
 * Procfile, Requirements.txt -for deployement on Heroku
 
 ## About the Data
-
+The data contains of only two fields.One column being the headline and another being the label data.<br>
+- Output label 0 implies -> Data is Uncensored <br>
+- Output label 1 implies -> Data is Censored <br><br>
+The volume of the data is 1268 records.<br>
+![Data_tail](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/Images/Data_tail.jpg)
 ## Exploratory Data Analysis
 
 ## Modeling
