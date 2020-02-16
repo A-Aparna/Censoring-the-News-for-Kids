@@ -10,6 +10,7 @@ The input to the data can be given in 2 ways:
 1)	Enter the URL to scrape: Enter the URL of the Newspaper website you want to censor. (Currently it’s been customized to work only for ‘inshorts’ news website. For other websites it can be customised.)
 Input: “https://inshorts.com/en/read”
 Output: List of the headlines from the ‘inshorts’ along with their URL’s displaying only the ones appropriate for kids to read.
+![output](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/Images/scrape%20and%20censor.jpg)
 2)	Enter the Headline: Enter one or more headlines in the text area. Each headline should be on a new line.
 Input: eg: A man was murdered
 	    A girl wins medal in chess championship 
@@ -30,13 +31,19 @@ The data contains of only two fields.One column being the headline and another b
 The volume of the data is 1268 records.<br>
 ![Data_tail](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/Images/Data_tail.jpg)
 ## Exploratory Data Analysis
-
+![EDA](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/Images/label_distribution.jpg)<br>
+The distribution of the labels as 0 and 1 is fairly decent with around 65:35 ratio.
+## Preprocessing the Data
+Since our input data is all words we need to process the data to get better it of the data.The processing is as follows:
+- Remove Punctuation marks
+- Convert all the words to lower case
+- Remove stop words (i.e. commonly used to words like- a,an,the,is,of which dont add necessarily add value to the quality of the data)
 ## Modeling
-1) Scraped various websites and collected news headlines on different days and archives to have a variety in the training dataset.
-2) Manually labelled the dataset as to be censored (label=1) and not to be censored (label=0) for the training dataset of roughly 2000 headlines.
-3) Trained the data on various models using NLTK library using various methods: TF-IDF, Skipgrams and used ML models: Tree classifier, Naïve Based and Logistic regression.
-4) Used flask model to create ReST API’s and deploy the model locally.
-5) Used Heroku cloud service to deploy the model as a web app.
+1) Trained the processed data on various models using NLTK library using various methods: TF-IDF, Skipgrams,Count Vectorization and used ML models: Tree classifier, Naïve Based and Logistic regression.
+2) Created pickle files which are serialized Python object structure.
+3) Used flask model which deserializes the pickle files.ReST API’s are created and deployed the model as a local host.
+4) Used Heroku cloud service to deploy the model as a web app which can access from anywhere.
 
 
 ## Summary
+Modeling the input data (news headlines) after it has been cleaned up is modeled using count vectorization with Linear Regression model. This fit gives the best accuracy of 76%. 
