@@ -17,7 +17,7 @@ Output: List of the headlines displaying only the ones appropriate for kids to r
 
 ### List of files in the repository
 *[app.py](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/app.py) - The python code to run the model and deploy it on the webpage.
-* Pickle files (headline_transform,censor_predict )
+*Pickle files (headline_transform,censor_predict )
 *[Templates](https://github.com/A-Aparna/NLP-Newsheadline-censoring/tree/master/templates) - Folder containing the html pages.
 *Static - CSS styling
 *Procfile, Requirements.txt -for deployement on Heroku
