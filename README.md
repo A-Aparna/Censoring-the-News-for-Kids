@@ -16,11 +16,12 @@ Input: eg: A man was murdered
 Output: List of the headlines displaying only the ones appropriate for kids to read.
 
 ### List of files in the repository
-*[app.py](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/app.py) - The python code to run the model and deploy it on the webpage.
-*Pickle files (headline_transform,censor_predict )
-*[Templates](https://github.com/A-Aparna/NLP-Newsheadline-censoring/tree/master/templates) - Folder containing the html pages.
-*Static - CSS styling
-*Procfile, Requirements.txt -for deployement on Heroku
+* [censor or uncensor.ipynb](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/Censor%20or%20Uncensor.ipynb) - Notebook for importing the data, modeling it and converting it into pickle files.
+* [app.py](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/app.ipynb) - The python code to read the pickle files and deploy it on the webpage.
+* Pickle files (headline_transform,censor_predict )
+* [Templates](https://github.com/A-Aparna/NLP-Newsheadline-censoring/tree/master/templates) - Folder containing the html pages.
+* Static - CSS styling
+* Procfile, Requirements.txt -for deployement on Heroku
 
 ## About the Data
 
