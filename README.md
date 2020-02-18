@@ -32,7 +32,7 @@ The volume of the data is 1268 records.<br>
 ![Data_tail](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/Images/Data_tail.jpg)
 ## Exploratory Data Analysis
 ![EDA](https://github.com/A-Aparna/NLP-Newsheadline-censoring/blob/master/Images/label_distribution.jpg)<br>
-The distribution of the labels as 0 and 1 is fairly decent with around 65:35 ratio.
+The distribution of the labels as 0 and 1 is fairly decent with around 60:40 ratio.
 ## Preprocessing the Data
 Since our input data is all words we need to process the data to get better it of the data.The processing is as follows:
 - Remove Punctuation marks
