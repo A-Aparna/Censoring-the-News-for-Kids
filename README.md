@@ -55,4 +55,4 @@ Naive Bayes |76 | 73.6
 
 
 ## Summary
-Modeling the input data (news headlines) after it has been cleaned up is modeled using count vectorization with Linear Regression model. This fit gives the best accuracy of 76%. 
+Modeling the input data (news headlines) after it has been cleaned up is modeled using count vectorization with Linear Regression model. This fit gives the best accuracy of 77.2%. 
