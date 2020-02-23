@@ -44,6 +44,15 @@ Since our input data is all words we need to process the data to get better it o
 3) Used flask model which deserializes the pickle files.ReST API’s are created and deployed the model as a local host.
 4) Used Heroku cloud service to deploy the model as a web app which can access from anywhere.
 
+The accuracies of various Algorithms is as follows:
+
+Algorithm | TF-IDF (%)   | Count Vectorizer (%)
+------------ | -------------|-------------------
+Logistic Regression | 75.2 | 77.2
+Support Vector Classifier | 62.6 | 62.6
+XGradient Boosting Classifier | 72 | 72
+Naive Bayes |76 | 73.6
+
 
 ## Summary
 Modeling the input data (news headlines) after it has been cleaned up is modeled using count vectorization with Linear Regression model. This fit gives the best accuracy of 76%. 
